@@ -22,8 +22,8 @@ In order to contribute, you need to have `kubectl` installed along with `minikub
 
   **1**. Navigate to the project folder and run the following command to install and build the app:
   ```bash
-     cd pkg/app
-     yarn start
+  cd pkg/app
+  yarn start
   ``` 
 
   **2**. You should now see the app on your local.
@@ -32,8 +32,8 @@ In order to contribute, you need to have `kubectl` installed along with `minikub
 
   **4**. In order to work with this app and connect with the backend you need to run the following helm commands from the project folder: 
   ```bash
-    cd helm/charts
-    helm install taskapp . --set debug=true
+  cd helm/charts
+  helm install taskapp . --set debug=true
   ```
 
   
