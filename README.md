@@ -15,7 +15,7 @@ Gathers task across multiple sources so you can be more productive. Tasks app le
 
 ```mermaid
 graph TD
-    subgraph Kubernetes Cluster
+    subgraph K8sCluster
         B[PostgresQL] --> C 
         C --> B
         C[Backend Distributor]
@@ -24,6 +24,7 @@ graph TD
     end
     D --> E[API Docs]
     C --> A[React Frontend]
+  classDef cluster fill:#fff,stroke:#bbb,stroke-width:2px;
 ```
 
 ## Roadmap
