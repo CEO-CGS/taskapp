@@ -1,5 +1,6 @@
+
 <br>
-<img src="https://user-images.githubusercontent.com/16570228/203880154-8003cbae-53e4-4602-8669-7082dd22da25.png" height=85/>
+<img src="https://user-images.githubusercontent.com/16570228/203883739-686693c5-5101-4175-808d-5b91ec813f2e.svg" height=85/>
 
 # Task App
 Gathers task across multiple sources so you can be more productive. Tasks app lets users spend less time fetching tasks and more time doing them!
@@ -9,6 +10,21 @@ Gathers task across multiple sources so you can be more productive. Tasks app le
 - Add new tasks manually via the app UI
 - View all tasks and filter by `today` or `all`
 - Manage your tasks via the Task App API (`GET`, `PUT`, `POST`, `DELETE` all tasks)
+
+## Application Architecture
+
+```mermaid
+graph TD
+    subgraph Kubernetes Cluster
+        B[PostgresQL] --> C 
+        C --> B
+        C[Backend Distributor]
+        D[API Service] --> C
+        C --> D
+    end
+    D --> E[API Docs]
+    C --> A[React Frontend]
+```
 
 ## Roadmap
 - [ ] Add Google Calendar, MS Outlook configuration
