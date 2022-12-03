@@ -27,6 +27,11 @@ graph TD
   classDef cluster fill:#fff,stroke:#bbb,stroke-width:2px;
 ```
 
+## Screenshots
+<img width="539" alt="image" src="https://user-images.githubusercontent.com/16570228/205416209-b52c514f-1205-4158-baf7-b11b04005cc7.png">
+
+<img width="539" alt="image" src="https://user-images.githubusercontent.com/16570228/205416249-0cc38eee-0370-4ba6-85d9-e0c450ab840f.png">
+
 ## Roadmap
 - [ ] Add Google Calendar, MS Outlook configuration
 - [ ] Automatically generate tasks from emails
